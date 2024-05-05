@@ -29,7 +29,7 @@ https://youtu.be/W2LCF3YYpIY?feature=shared
 
 https://gee.es/2023/05/17/como-creo-un-entorno-de-desarrollo-con-env-en-vscode/
 
-## Instalació entorn virtual
+### Instalació entorn virtual
 
 Per instalar i crear l'entorn virtual necessitarem:
 
@@ -51,8 +51,37 @@ Per instalar i crear l'entorn virtual necessitarem:
 6. Un cop activa, ja podem instalar *Flask* i el *Feedparser*:
 - `pip install flask`
 - `pip install feedparser`
-7. Crearem un fitxer *Python* de nom **app.py**, que sera fill de la carpeta arrel.
+7. Crearem un fitxer *Python* de nom **app.py**, que sera fill de la carpeta arrel. Més endavant utilitzarem aquest fitxer.
 
 <p align="center">
-  <img src="attachments/crear-app-py.png" alt="image" width="650" height="200">
+  <img src="attachments/crear-app-py.png" alt="image">
 </p>
+
+Per facilitar la integració entre el *Visual Studio Code* i l'entorn virtual descarreguem l'extensio:
+
+[Python Environment Manager](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-environment-manager)
+
+Amb aixo ja tenim el entorn virtual instalat i configurat.
+
+### Flask
+
+Flask és un marc de treball web lleuger i flexible per a Python que facilita la creació d'aplicacions web. És conegut per la seva simplicitat i facilitat d'ús. El seu enfocament minimalista el fa una excel·lent opció tant per a principiants com per a desenvolupadors experimentats.
+
+Mes informació [aquí](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/flask/).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>&nbsp;</p>
