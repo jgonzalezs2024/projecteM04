@@ -1,3 +1,11 @@
+
+<p align="center">
+  <img src="attachments/python-flask.png" alt="image" width="400" height="300">
+</p>
+
+
+
+
 # PROJECTE M04 Javier González Sánchez
 
 El projecte consisteix en *desenvolupar una aplicació* amb **python** + **flask** que mostra el contingut de **XMLs** en format **feed**/**rss** maquetat amb **bootstrap**.
