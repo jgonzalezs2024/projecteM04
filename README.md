@@ -21,6 +21,8 @@ Mes informació [aqui](https://docs.python.org/es/3.8/distutils/packageindex.htm
 
 Els **entorns virtuals** són una manera de crear i gestionar un entorn d'execució aïllat per a les teves aplicacions. Això facilita el desenvolupament de projectes ja que manté les dependències separades i evita conflictes amb l'entorn global del sistema. Amb *Python*, el mòdul **venv** et permet crear entorns virtuals.
 
+Mes informació [aqui](https://docs.python.org/es/3/library/venv.html)
+
 ## Flask
 
 Flask és un marc de treball web lleuger i flexible per a Python que facilita la creació d'aplicacions web. És conegut per la seva simplicitat i facilitat d'ús. El seu enfocament minimalista el fa una excel·lent opció tant per a principiants com per a desenvolupadors experimentats.
