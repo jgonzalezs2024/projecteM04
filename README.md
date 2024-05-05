@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="attachments/python-flask.png" alt="image" width="400" height="300">
+  <img src="attachments/python-flask.png" alt="image" z>
 </p>
 
 
@@ -32,7 +32,7 @@ Per instalar i crear l'entorn virtual necessitarem:
 3. Obrim la carpeta a la terminal
 
 <p align="center">
-  <img src="attachments/captura_carpeta.png" alt="image">
+  <img src="attachments/captura_carpeta.png" alt="image" width="650" height="200">
 </p>
 
 
