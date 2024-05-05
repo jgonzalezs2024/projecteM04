@@ -16,7 +16,6 @@ Per començar:
 2. Obrim Visual Studio Code
 3. Obrim la carpeta a la terminal
 
-![image](https://github.com/jgonzalezs2024/projecteM04/assets/165821294/ea7aaa13-678f-493d-8a9c-0c6c860f933b)
 
 
 5. Descarreguem l'entorn virtual amb: `python3 -m venv .venv`
