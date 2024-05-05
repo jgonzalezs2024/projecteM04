@@ -16,6 +16,10 @@ Per començar:
 2. Obrim Visual Studio Code
 3. Obrim la carpeta a la terminal
 
+<div style="text-align: center;">
+  <img src="attachments/captura_carpeta.png" alt="image">
+</div>
+
 
 5. Descarreguem l'entorn virtual amb: `python3 -m venv .venv`
 
