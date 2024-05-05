@@ -15,19 +15,24 @@ El projecte consisteix en *desenvolupar una aplicació* amb **python** + **flask
 
 Et permet **instal·lar i administrar** paquets de programari escrits en *Python* que estan disponibles al *Python Package Index (PyPI)*. *PyPI* és un **repositori de programari** per a la comunitat de *Python*, que conté milers de paquets que poden ser instal·lats i utilitzats en projectes de *Python*.
 
-Mes informació [aquí](https://docs.python.org/es/3.8/distutils/packageindex.html).
+Mes informació [aqui](https://docs.python.org/es/3.8/distutils/packageindex.html).
 
 ### Entorns virtuals
 
 Els **entorns virtuals** són una manera de crear i gestionar un entorn d'execució aïllat per a les teves aplicacions. Això facilita el desenvolupament de projectes ja que manté les dependències separades i evita conflictes amb l'entorn global del sistema. Amb *Python*, el mòdul **venv** et permet crear entorns virtuals.
 
-**Tutorial**
+### Flask
 
-https://youtu.be/W2LCF3YYpIY?feature=shared
+Flask és un marc de treball web lleuger i flexible per a Python que facilita la creació d'aplicacions web. És conegut per la seva simplicitat i facilitat d'ús. El seu enfocament minimalista el fa una excel·lent opció tant per a principiants com per a desenvolupadors experimentats.
 
-**Mes info**
+Mes informació [aqui](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/flask/).
 
-https://gee.es/2023/05/17/como-creo-un-entorno-de-desarrollo-con-env-en-vscode/
+### Feedparser
+
+Feedparser és un mòdul de Python que permet analitzar feeds RSS i Atom. Amb Feedparser, pots extreure informació de feeds de notícies, blogs, podcasts, etc. d'una manera senzilla i eficient.
+
+Mes informació [aqui](https://github.com/kurtmckee/feedparser)
+
 
 ### Instalació entorn virtual
 
@@ -63,13 +68,47 @@ Per facilitar la integració entre el *Visual Studio Code* i l'entorn virtual de
 
 Amb aixo ja tenim el entorn virtual instalat i configurat.
 
-### Flask
+**Tutorial**
 
-Flask és un marc de treball web lleuger i flexible per a Python que facilita la creació d'aplicacions web. És conegut per la seva simplicitat i facilitat d'ús. El seu enfocament minimalista el fa una excel·lent opció tant per a principiants com per a desenvolupadors experimentats.
+https://youtu.be/W2LCF3YYpIY?feature=shared
 
-Mes informació [aquí](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/flask/).
+**Mes info**
 
+https://gee.es/2023/05/17/como-creo-un-entorno-de-desarrollo-con-env-en-vscode/
 
+### Funcionament Flask
+
+#### Hello world
+
+1. Primer de tot, initzialitzarem amb : `flask run --debug`
+2. Crearem un fitxer **index.html**
+
+```<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World amb Flask i Jinja</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Exemple de página web estática amb Flask i Jinja.</p>
+</body>
+</html>
+```
+3. Afegim la ruta al nostre fitxer **app.py**
+
+```from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
 
 
 
