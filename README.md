@@ -11,30 +11,30 @@
 
 El projecte consisteix en *desenvolupar una aplicació* amb **python** + **flask** que mostra el contingut de **XMLs** en format **feed**/**rss** maquetat amb **bootstrap**.
 
-### PIP. Que és?
+## PIP. Que és?
 
 Et permet **instal·lar i administrar** paquets de programari escrits en *Python* que estan disponibles al *Python Package Index (PyPI)*. *PyPI* és un **repositori de programari** per a la comunitat de *Python*, que conté milers de paquets que poden ser instal·lats i utilitzats en projectes de *Python*.
 
 Mes informació [aqui](https://docs.python.org/es/3.8/distutils/packageindex.html).
 
-### Entorns virtuals
+## Entorns virtuals
 
 Els **entorns virtuals** són una manera de crear i gestionar un entorn d'execució aïllat per a les teves aplicacions. Això facilita el desenvolupament de projectes ja que manté les dependències separades i evita conflictes amb l'entorn global del sistema. Amb *Python*, el mòdul **venv** et permet crear entorns virtuals.
 
-### Flask
+## Flask
 
 Flask és un marc de treball web lleuger i flexible per a Python que facilita la creació d'aplicacions web. És conegut per la seva simplicitat i facilitat d'ús. El seu enfocament minimalista el fa una excel·lent opció tant per a principiants com per a desenvolupadors experimentats.
 
 Mes informació [aqui](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/flask/).
 
-### Feedparser
+## Feedparser
 
 Feedparser és un mòdul de Python que permet analitzar feeds RSS i Atom. Amb Feedparser, pots extreure informació de feeds de notícies, blogs, podcasts, etc. d'una manera senzilla i eficient.
 
 Mes informació [aqui](https://github.com/kurtmckee/feedparser)
 
 
-### Instalació entorn virtual
+## Instalació entorn virtual
 
 Per instalar i crear l'entorn virtual necessitarem:
 
@@ -76,14 +76,15 @@ https://youtu.be/W2LCF3YYpIY?feature=shared
 
 https://gee.es/2023/05/17/como-creo-un-entorno-de-desarrollo-con-env-en-vscode/
 
-### Funcionament Flask
+## Funcionament Flask
 
-#### Hello world
+### Hello world
 
 1. Primer de tot, initzialitzarem amb : `flask run --debug`
 2. Crearem un fitxer **index.html**
 
-```<!DOCTYPE html>
+```
+<!DOCTYPE html>
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
@@ -98,19 +99,37 @@ https://gee.es/2023/05/17/como-creo-un-entorno-de-desarrollo-con-env-en-vscode/
 ```
 3. Afegim la ruta al nostre fitxer **app.py**
 
-```from flask import Flask, render_template
+```
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
     return render_template('index.html')
-
-if __name__ == '__main__':
-    app.run(debug=True)
 ```
 
+4. Obrim al nostre navegador la *url* http://127.0.0.1:5000/, i si tot esta bé aquest será el resultat.
 
+<p align="center">
+  <img src="attachments/html.png" alt="image">
+</p>
+
+### Funcionament per local o per remot
+
+Al nostre codi bàsic, al fitxer **app.py**, tenim una funció que permet executar l'arxiu *RSS* al mode local o al mode remot.
+
+**Mode remot**: Per tractar les dades desde la web directament comenten la linea que tracta les dades desde la local
+
+<p align="center">
+  <img src="attachments/remot.png" alt="image">
+</p>
+
+**Mode loca**: A la inversa, comenten la linea que tracta les dades desde mode remot.
+
+<p align="center">
+  <img src="attachments/local.png" alt="image">
+</p>
 
 
 
