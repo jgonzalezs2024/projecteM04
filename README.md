@@ -23,8 +23,11 @@ Els **entorns virtuals** són una manera de crear i gestionar un entorn d'execuc
 
 **Tutorial**
 
-[![Tutorial de Markdown](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://youtu.be/W2LCF3YYpIY?feature=shared)
 https://youtu.be/W2LCF3YYpIY?feature=shared
+
+**Mes info**
+
+https://gee.es/2023/05/17/como-creo-un-entorno-de-desarrollo-con-env-en-vscode/
 
 ## Instalació entorn virtual
 
@@ -48,4 +51,10 @@ Per instalar i crear l'entorn virtual necessitarem:
 6. Un cop activa, ja podem instalar *Flask* i el *Feedparser*:
 - `pip install flask`
 - `pip install feedparser`
+7. Crearem un fitxer *Python* de nom **app.py**, que sera fill de la carpeta arrel.
+
+<p align="center">
+  <img src="attachments/captura_carpeta.png" alt="image" width="650" height="200">
+</p>
+  ![image](https://github.com/jgonzalezs2024/projecteM04/assets/165821294/331af9e2-ed74-40df-9837-b36c1c3a60ee)
 
