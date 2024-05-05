@@ -10,7 +10,9 @@ Per instalar i crear l'entorn virtual necessitarem:
 
 Et permet instal·lar i administrar paquets de programari escrits en Python que estan disponibles al Python Package Index (PyPI). PyPI és un repositori de programari per a la comunitat de Python, que conté milers de paquets que poden ser instal·lats i utilitzats en projectes de Python.
 
-Per començar:
+Mes informació [aquí](https://docs.python.org/es/3.8/distutils/packageindex.html).
+
+**Per començar:**
 
 1. Crearem una carpeta amb el nom del projecte.
 2. Obrim Visual Studio Code
