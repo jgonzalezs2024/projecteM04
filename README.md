@@ -21,6 +21,11 @@ Mes informació [aquí](https://docs.python.org/es/3.8/distutils/packageindex.ht
 
 Els **entorns virtuals** són una manera de crear i gestionar un entorn d'execució aïllat per a les teves aplicacions. Això facilita el desenvolupament de projectes ja que manté les dependències separades i evita conflictes amb l'entorn global del sistema. Amb *Python*, el mòdul **venv** et permet crear entorns virtuals.
 
+**Tutorial**
+
+[![Tutorial de Markdown](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://youtu.be/W2LCF3YYpIY?feature=shared)
+https://youtu.be/W2LCF3YYpIY?feature=shared
+
 ## Instalació entorn virtual
 
 Per instalar i crear l'entorn virtual necessitarem:
