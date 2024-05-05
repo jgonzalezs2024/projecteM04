@@ -54,7 +54,5 @@ Per instalar i crear l'entorn virtual necessitarem:
 7. Crearem un fitxer *Python* de nom **app.py**, que sera fill de la carpeta arrel.
 
 <p align="center">
-  <img src="attachments/captura_carpeta.png" alt="image" width="650" height="200">
+  <img src="attachments/crear-app-py.png" alt="image" width="650" height="200">
 </p>
-  ![image](https://github.com/jgonzalezs2024/projecteM04/assets/165821294/331af9e2-ed74-40df-9837-b36c1c3a60ee)
-
