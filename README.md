@@ -82,10 +82,10 @@ https://gee.es/2023/05/17/como-creo-un-entorno-de-desarrollo-con-env-en-vscode/
 
 ### Hello world
 
-1. Primer de tot, initzialitzarem amb : `flask run --debug`
+1. Primer de tot, initzialitzarem amb : `.venv\Scripts\activate` i `flask run --debug`
 2. Crearem un fitxer **index.html**
 
-```
+```html
 <!DOCTYPE html>
 <html lang="ca">
 <head>
@@ -101,7 +101,7 @@ https://gee.es/2023/05/17/como-creo-un-entorno-de-desarrollo-con-env-en-vscode/
 ```
 3. Afegim la ruta al nostre fitxer **app.py**
 
-```
+```python
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -127,11 +127,61 @@ Al nostre codi bàsic, al fitxer **app.py**, tenim una funció que permet execut
   <img src="attachments/remot.png" alt="image">
 </p>
 
-**Mode loca**: A la inversa, comenten la linea que tracta les dades desde mode remot.
+**Mode local**: A la inversa, comenten la linea que tracta les dades desde mode remot.
 
 <p align="center">
   <img src="attachments/local.png" alt="image">
 </p>
+
+## Bootstrap
+
+Bootstrap és un framework de desenvolupament front-end de codi obert que facilita la creació d'interfícies d'usuari responsives i atractives per a llocs web i aplicacions mòbils. Tenim classes predefinides que utilitzarem directament a les etiquetes **html**. No m'extendre aqui perque la informació es massa extensa, si voleu cercar de mes a prop, feu una ullada al enllaç de sota.
+
+Mes informació [aqui](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+
+## Funcionament Bootstrap
+
+### Hello world
+
+1. Primer de tot, initzialitzarem amb : `.venv\Scripts\activate` i `flask run --debug`
+2. Crearem un fitxer **index.html**
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Hola, mundo! con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container"> <!-- Contenidor principal de Bootstrap -->
+        <div class="row"> <!-- Fila para aliniar els elements horizontalment -->
+            <div class="col-md-6 offset-md-3 mt-5"> <!-- Columna amb un ample (md) de 6 a 12 columnes, per centrar la columna en tipus de pantalla mijtana (md), margin-top de 5 espais (mt-5) -->
+                <div class="card">  <!-- Tipus de contenidor flexible -->
+                    <div class="card-body text-center">  <!-- body del contenidor -->
+                        <h1 class="card-title">¡Hola, mundo!</h1> <!-- Titol -->
+                        <p class="card-text">Exemple bàsic de una pàgina web utilitzant Bootstrap..</p>  <!-- Text -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+```
+
+3. Com abans ja hem afegit la ruta al **app.py**, anem directament a  http://127.0.0.1:5000
+
+![image](https://github.com/jgonzalezs2024/projecteM04/assets/165821294/63a74f03-4b55-4495-acce-b8009744175a)
+
+## Implementacions del projecte
+
+He afegit diverses funcionalitats i un esquema mitjançant **Bootsrap**, **CSS** i **Jinja**
+
+1. He afegit 2 seccions noves al codi base, en total tinc 5, per fer-ho descarreguem el **XML** copiant l'arxiu o com volgueu i l'afegim al nostre directori
 
 
 
