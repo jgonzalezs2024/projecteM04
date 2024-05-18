@@ -365,6 +365,9 @@ He afegit diverses funcionalitats i un esquema mitjançant **Bootsrap**, **CSS**
 
 3. He pujat el codi a *Git*, he fet una etiqueta de la ultima versió de l'aplicació i li he donat accés al profesorat
 
+![image](https://github.com/jgonzalezs2024/projecteM04/assets/165821294/82c2506e-f559-4893-97dd-ef9b48c9c478)
+
+
 
 
 
