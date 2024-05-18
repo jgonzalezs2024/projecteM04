@@ -367,6 +367,9 @@ He afegit diverses funcionalitats i un esquema mitjançant **Bootsrap**, **CSS**
 
 ![image](https://github.com/jgonzalezs2024/projecteM04/assets/165821294/82c2506e-f559-4893-97dd-ef9b48c9c478)
 
+![image](https://github.com/jgonzalezs2024/projecteM04/assets/165821294/9e709fac-3e83-4e9b-b4aa-03060af6ab7c)
+
+
 
 
 
