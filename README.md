@@ -181,10 +181,189 @@ Mes informació [aqui](https://getbootstrap.com/docs/5.3/getting-started/introdu
 
 He afegit diverses funcionalitats i un esquema mitjançant **Bootsrap**, **CSS** i **Jinja**
 
-1. He afegit 2 seccions noves al codi base, en total tinc 5, per fer-ho descarreguem el **XML** copiant l'arxiu o com volgueu i l'afegim al nostre directori
+1. He afegit 2 seccions noves al codi base, en total tinc 5, per fer-ho descarregueu el **XML** copiant l'arxiu o com volgueu i l'afegim al nostre directori corresponent. En la seguent captura es veu un menu **nav-bar** on hi son tots els enllaços de les seccions a partir de **ul** **li** i **a**.
 
+```html
+<div class="encabezado">
+    <h1 class="text-center">LA VANGUARDIA</h1>
+    <nav class="navbar navbar-expand-sm bg-custom">
+        <div class="container-fluid justify-content-center">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="/lavanguardia/deportes"><i class="fas fa-futbol"></i> Deportes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/lavanguardia/politica"><i class="fas fa-landmark"></i> Política</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/lavanguardia/vida"><i class="fas fa-heart"></i> Sociedad</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/lavanguardia/mascotas"><i class="fas fa-paw"></i> Mascotas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/lavanguardia/cultura"><i class="fas fa-globe"></i> Cultura</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+</div>
+```
+2. Modificar l'**html** de La Vanguardia per afegir tota la informació demanades.
 
+```html
+<div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4">
+            {% for item in rss.entries %}
+                <div class="col">
+                    <div class="card mb-3">
+                        {% if item.media_content %}
+                            <img src="{{item.media_content[0].url}}" class="card-img-top" alt="{{item.title}}">
+                        {% endif %}
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="{{item.link}}">{{item.title}}</a></h5>
+                            <p class="card-text descripcion">{{item.description}}</p>
+                            <p class="card-text">Publicado: {{item.published}}</p>
+                            <p class="card-text">Modificado: {{item.updated}}</p>
+                            <p class="card-text">Autor: {{item.author}}</p>
+                            <p class="card-text">Categoría: {{item.category}}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+```
 
+3. El carrusel l'he creat seguint els passos [aqui](https://getbootstrap.esdocu.com/docs/5.3/components/carousel/), he triat un dels mes simples, he descarregat unes imatges, l'has he incorporat a la carpeta corresponent i les crido al carrusel.
+
+```html
+<div id="carouselExample" class="carousel slide justify-content-center" style="padding-top: 40px;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../static/img/gat.jpg" class="d-block w-100 carousel-img" alt="1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/diario3.jpg" class="d-block w-100 carousel-img" alt="2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/diario2.jpg" class="d-block w-100 carousel-img" alt="3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/vanguardia_vieja.jpg" class="d-block w-100 carousel-img" alt="3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+```
+### Extres
+
+1. Afegir **CSS** per complementar les pàgines.
+
+```css
+.bg-custom {
+    background-color: rgba(0, 28, 76, 1);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-height: 500px;
+}
+
+.col {
+    border-right: 1px solid #ccc; 
+    padding: 10px; 
+}
+
+.descripcion {
+    font-size: 20px;
+}
+
+.encabezado {
+    background-color: rgba(0, 28, 76, 255);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fondo {
+    background-color: black;
+}
+
+.h1 {
+    background-color: rgba(0, 28, 76, 255);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+}
+
+.img {
+    width: 400px;
+}
+
+.logo_clase {
+    max-width: 80%;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: rgba(0, 28, 76, 255);
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    background-color: rgba(0, 28, 76, 255);
+}
+
+.pie_pagina {
+    background-color: azure;
+}
+
+.text-center {
+    font-size: 5em;
+}
+```
+
+2. He afegit icones font awesome als enllaços del nav-bar
+
+```html
+<i class="fas fa-futbol"></i> Deportes</a>
+<i class="fas fa-landmark"></i> Política</a>
+<i class="fas fa-heart"></i> Sociedad</a>
+<i class="fas fa-paw"></i> Mascotas</a>
+<i class="fas fa-globe"></i> Cultura</a>
+```
+
+3. He pujat el codi a *Git*, he fet una etiqueta de la ultima versió de l'aplicació i li he donat accés al profesorat
 
 
 
