@@ -1,20 +1,124 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="ca" data-bs-theme="bg-primary">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/style.css">
     <title>Diaris!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <p>Mira les noticies de La Vanguardia:</p>
-    <ul>
-        <li><a href="/lavanguardia/deportes">Deportes</a></li>
-        <li><a href="/lavanguardia/politica">Política</a></li>
-        <li><a href="/lavanguardia/vida">Vida</a></li>
-        <li><a href="/lavanguardia/mascotas">Mascotas</a></li>
-        <li><a href="/lavanguardia/viajes">Viajes</a></li>
-    </ul>
-    <img src="/static/img/diaris.jpg" alt="Diaris" />
+    <div class="encabezado">
+    <h1 class="text-center">LA VANGUARDIA</h1>
+    <nav class="navbar navbar-expand-sm bg-custom">
+        <div class="container-fluid justify-content-center">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="/lavanguardia/deportes"><i class="fas fa-futbol"></i> Deportes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/lavanguardia/politica"><i class="fas fa-landmark"></i> Política</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/lavanguardia/vida"><i class="fas fa-heart"></i> Sociedad</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/lavanguardia/mascotas"><i class="fas fa-paw"></i> Mascotas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/lavanguardia/cultura"><i class="fas fa-globe"></i> Cultura</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+</div>
+ 
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-1"></div> <!-- Margin Left -->
+        
+        <div class="col-md-3 border">
+            <h2 class="justify-content-center">Historia...</h2>
+            <p>
+                Fundado en 1881 por Carlos Godó y Pié, La Vanguardia nació con la visión de ser un medio de comunicación que ofreciera información objetiva y de calidad. Desde entonces, el periódico ha sido testigo y protagonista de momentos clave en la historia de España.</p>
+            <p>
+                A lo largo de los años, La Vanguardia ha experimentado un continuo proceso de crecimiento y modernización, adaptándose a los avances tecnológicos y a las nuevas formas de consumo de información. Ha sido un referente en la introducción de innovaciones periodísticas, manteniendo siempre su compromiso con la excelencia periodística.</p>           
+            <p>
+                Más allá de su labor informativa, La Vanguardia ha sido un espacio de debate y reflexión en la sociedad española. Su pluralidad editorial ha permitido abordar una amplia gama de temas y perspectivas, promoviendo el diálogo y la diversidad de opiniones.</p>
+        </div>
+
+        <div class="col-md-4">
+            <div id="carouselExample" class="carousel slide justify-content-center" style="padding-top: 40px;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../static/img/gat.jpg" class="d-block w-100 carousel-img" alt="1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/diario3.jpg" class="d-block w-100 carousel-img" alt="2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/diario2.jpg" class="d-block w-100 carousel-img" alt="3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/vanguardia_vieja.jpg" class="d-block w-100 carousel-img" alt="3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="col-md-3 border border-2">
+            <h2 class="justify-content-center">Actualidad</h2>
+            <p>
+                Premios La Vanguardia es un galardón que otorga el periódico La Vanguardia a personalidades destacadas en diferentes ámbitos como la cultura, el deporte, la ciencia, la política, entre otros. Los premios se otorgan anualmente.</p>
+            <p>
+                Los Premios La Vanguardia son un galardón anual establecido en 2023 por el prestigioso diario español La Vanguardia. La idea de crear estos premios surgió en 2021, con motivo de la celebración del 140º aniversario del medio. Sin embargo, no fue posible llevar a cabo la ceremonia de inauguración en la fecha prevista inicialmente. Fue necesario esperar dos años.</p> 
+            <p>
+                Los premios buscan reconocer y celebrar la excelencia en diversas áreas como la cultura, la ciencia, la tecnología, el periodismo y otras disciplinas que reflejan el compromiso del diario con la promoción del talento y la innovación en la sociedad española.</p>
+        </div>
+        
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <div class="pie_pagina">
+            <nav class="navbar navbar-expand-sm bg-custom">
+                <div class="container-fluid justify-content-center">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lavanguardia/deportes"><i class="fas fa-futbol"></i> Deportes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lavanguardia/politica"><i class="fas fa-landmark"></i> Política</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lavanguardia/vida"><i class="fas fa-heart"></i> Sociedad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lavanguardia/mascotas"><i class="fas fa-paw"></i> Mascotas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lavanguardia/cultura"><i class="fas fa-globe"></i> Cultura</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+        </div>
 </body>
 </html>

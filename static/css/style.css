@@ -1,8 +1,100 @@
-body {
-    background-color: beige;
+a {
+    font-size: 145%;
 }
 
-img {
+.bg-custom {
+    background-color: rgba(0, 28, 76, 1);
+}
+
+.carousel-control-next, .carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Esto asegura que la imagen cubra completamente el contenedor sin distorsionarse */
+}
+
+.carousel-inner {
+    width: 100%;
+    max-height: 500px; /* Puedes ajustar este valor según tus necesidades */
+}
+
+.col {
+    border-right: 1px solid #ccc; 
+    padding: 10px; 
+}
+
+.descripcion {
+    font-size: 20px;
+}
+
+.encabezado {
+    background-color: rgba(0, 28, 76, 255);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fondo {
+    background-color: black;
+}
+
+h1 {
+    background-color: rgba(0, 28, 76, 255);
+    color: white; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+}
+
+html {
+    background-color: azure;
+}
+
+.img {
     width: 400px;
-    height: auto;
+}
+
+.logo_clase {
+    max-width: 80%;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: rgba(0, 28, 76, 255);
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: rgba(0, 28, 76, 255);
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    background-color: rgba(0, 28, 76, 255);
+}
+
+.pie_pagina {
+    background-color: azure;
+}
+
+.text-center {
+    font-size: 5em;
 }
