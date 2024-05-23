@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="attachments/python-flask.png" alt="image" z>
+  <img src="static/python_flask.jpg" alt="image" z>
 </p>
 
 
