@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="static/python_flask.jpg" alt="image" z>
+  <img src="static/img/python_flask.jpg" alt="image" z>
 </p>
 
 
@@ -45,12 +45,6 @@ Per instalar i crear l'entorn virtual necessitarem:
 1. Crearem una carpeta amb el nom del projecte.
 2. Descarreguem o obrim *Visual Studio Code* si ja el tenim
 3. Obrim la carpeta a la terminal
-
-<p align="center">
-  <img src="attachments/captura_carpeta.png" alt="image" width="650" height="200">
-</p>
-
-
 4. Descarreguem l'entorn virtual amb: `python3 -m venv .venv`
 5. Activem l'entorn virtual:
 - *Linux* : `source .venv/bin/activate`
@@ -59,10 +53,6 @@ Per instalar i crear l'entorn virtual necessitarem:
 - `pip install flask`
 - `pip install feedparser`
 7. Crearem un fitxer *Python* de nom **app.py**, que sera fill de la carpeta arrel. Més endavant utilitzarem aquest fitxer.
-
-<p align="center">
-  <img src="attachments/crear-app-py.png" alt="image">
-</p>
 
 Per facilitar la integració entre el *Visual Studio Code* i l'entorn virtual descarreguem l'extensio:
 
@@ -114,7 +104,7 @@ def index():
 4. Obrim al nostre navegador la *url* http://127.0.0.1:5000/, i si tot esta bé aquest será el resultat.
 
 <p align="center">
-  <img src="attachments/html.png" alt="image">
+  <img src="static/img/hello_world.jpg" alt="image">
 </p>
 
 ### Funcionament per local o per remot
@@ -123,14 +113,10 @@ Al nostre codi bàsic, al fitxer **app.py**, tenim una funció que permet execut
 
 **Mode remot**: Per tractar les dades desde la web directament comenten la linea que tracta les dades desde la local
 
-<p align="center">
-  <img src="attachments/remot.png" alt="image">
-</p>
-
 **Mode local**: A la inversa, comenten la linea que tracta les dades desde mode remot.
 
 <p align="center">
-  <img src="attachments/local.png" alt="image">
+  <img src="static/img/modo_local_remoto.jpg" alt="image">
 </p>
 
 ## Bootstrap
